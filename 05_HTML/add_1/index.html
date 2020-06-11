@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="utf-8">
+         <title>Формы.дополнительное</title>
+        <H2 align="center">Заполните анкету</H2>
+</head>
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" mehtod="get"></form>
+
+  
+<fieldset>
+<legend>Личные данные</legend>
+<input type="text" placeholder="Фамилия"> text:Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле)</br>   
+<input type="text" placeholder="Имя"> text:Только кириллица, без пробелов, длина поля 20, обязательное поле)</br>  
+<input type="text" placeholder="Отчество"> text:Только кириллица, без пробелов, длина поля 24, обязательное поле)</br>  
+
+<fieldset>
+    <legend>Паспортные данные</legend>
+    text:Серия- только заглавные две латинские буквы с длинной 2 и максимальным количеством символов 2, количество букв не менее 2, обязательное поле
+    <br>text:Номер паспорта - только цифры длиной 7 и максимальным количеством символов 7, количество цифр не менее 7, обязательное поле</br>    
+    <input type="text" placeholder="AA"> <input type="text" placeholder="1234567">
+    
+    </fieldset>
+
+    <fieldset>
+        <legend>Дата рождения</legend>
+        <input type="text" placeholder="2000"> text:Год рождения 4-е цифры
+        <br><select name="list" id="list"><option value="1">Январь</option></select> select: Месяц рождения</br>
+        <input type="text" placeholder=""> number: Диапазон от 1 до 31 с шагом 1
+              
+        </fieldset>
+        <br><select name="list" id="list"><option value="1">РБ</option></select> (Национальность - выбор одного значения из списка, обязательная поле)</br>
+        Адрес:
+        <br><input type="text" placeholder=""></br>
+
+</fieldset>
+
+<fieldset>
+    <legend>Интересы</legend>
+         
+    <fieldset>
+        <legend>array: Хобби</legend>
+
+        <br><input type="checkbox" name="" id="сhbox1" checked> Рыбалка</br> 
+        <br><input type="checkbox" name="" id="сhbox1" checked> Астрономия </br>
+        <br><input type="checkbox" name="" id="сhbox1" checked> Дайвинг </br>
+        <br><input type="checkbox" name="" id="сhbox1" checked> Марки </br>
+                
+        </fieldset>
+    
+        <fieldset>
+            <legend>Домашние животные (возможность выбора нескольких вариантов):</legend>
+            array: select multiple
+            <br>
+            <select name="list" size="9" multiple id="list">
+                <optgroup label="Попугаи">
+                    <option value="1">Волнистый</option>
+                    <option value="2" disabled>Ара</option>
+                    <option value="3" selected>Неразлучник</option>
+                </optgroup>
+                <optgroup label="Рыба">
+                    <option value="4">Караси</option>
+                    <option value="5">Окуни</option>
+                    <option value="6">Осётер</option>
+                </optgroup>
+                <optgroup label="Птицы">
+                    <option value="7">Стая ворон</option>
+                    <option value="8">Аист</option>
+                    <option value="9">Археоптерикс</option>
+                </optgroup>
+            </select>
+            </br>
+    
+    </fieldset>
+   
+    <fieldset>
+        <legend>Данные  для входа и восстановления пароля</legend>
+
+        <input type="text" placeholder="Логин"> text:Только латиница, без пробелов, не менее 5 символов, длина поля 20, обязательное поле</br>   
+        <input type="text" placeholder="Пароль"> password:Только латиница, без пробелов, не менее 10 символов, длина поля 20, обязательное поле, отключить автозаполнение</br> 
+                     
+    </fieldset>
+
+    <fieldset>
+        <legend>Координаты:</legend>
+
+        <input type="text" placeholder="введите адрес почты"> email: проверка должна осуществляться при помощи новых атрибутов тега < input >)</br>   
+        <input type="text" placeholder="введите адрес сайта">url: проверка должна осуществляться при помощи новых атрибутов тега < input ></br> 
+                     
+    </fieldset>
+
+    <fieldset>
+        <legend>Цифры:</legend>
+
+        <input type="text" placeholder=""> number: Диапазон от -2.5 до 2.5 с шагом 0.1</br> 
+        <input type="range"> range: Максимальное 10 минимальное 1   
+         
+                     
+    </fieldset>
+
+    <fieldset>
+        <legend>Кнопки управленния:</legend>
+        <button type-"sumbit"><b>Отправить</b></button> 
+        <button type-"sumbit"><b>Сбросить</b></button> 
+        <br><img src="img/email.jpg" alt="icon-email" width="40" height="40" align> </img><sup> - при нажатии на эту кнопку ничего не происходит</sup></br>
+                              
+    </fieldset>
+
+ </body>
+</html>  

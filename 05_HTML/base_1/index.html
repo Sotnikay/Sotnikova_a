@@ -8,12 +8,13 @@
 <body>
 
 <!--1-->
-   <table>
+  <table>
+  <tr>     
   <td>
  <p><h4>Простая форма поиска с вариантами:</h4></p>
 <fieldset>
 <legend> Строка поиска</legend>     
-<form action="http:// " method="get">
+<form action="http://fe.it-academy.by/TestForm.php" method="get">
 
 <input type="text" />
 <button type-"sumbit"><b>Искать</b></button>
@@ -29,13 +30,14 @@
 </form>
 </fieldset>
 </td>
-
+</div>
 <!--2-->
+<div>
 <td>
 <p><h4>Простая форма поиска с вариантами:</h4></p>
 <fieldset>
 <legend> Строка поиска</legend>     
-<form action="http:// " method="get">
+<form action="http://fe.it-academy.by/TestForm.php" method="get">
 
 <input type="text" /> *
 <button type-"sumbit"><b>Искать</b></button>
@@ -52,16 +54,15 @@
 </form>
 </fieldset>
 </td>
-</table>
-
+</tr>
+</div>
 <!--3-->
 
-<table>
     <td>
 <p><h4>Простая форма авторизации:</h4></p>
 <fieldset>
 <legend> Авторизуются</legend>     
-<form action="http:// " method="get">
+<form action="http://fe.it-academy.by/TestForm.php" method="get">
 
 <input type="text" /> * Логин
 <p><input type="text" /> * Пароль </p>
@@ -76,14 +77,14 @@
 <p><i> <sup>*</sup> - обязательное поле</i></p>
 </form>
 </fieldset>
-    </td>
+</td>
 
 <!--4-->
 <td>
 <p><h4> Опрос (голосование):</h4></p>
 <fieldset>
 <legend> Как вам?</legend>     
-<form action="http:// " method="get">
+<form action="http://fe.it-academy.by/TestForm.php" method="get">
 
     <label>
         <p><input type="radio" name="radio group" value="value_01" id="Checkbox_Group1_0" checked> ничего</p>
@@ -101,7 +102,7 @@
 </form>
 </fieldset>
 </td>
-</table>
+
 <!--5-->
 
 <table>
@@ -109,7 +110,7 @@
 <p><h4>Отзыв:</h4></p>
 <fieldset>
 <legend> Оставьте Ваш отзыв</legend>     
-<form action="http:// " method="get">
+<form action="http://fe.it-academy.by/TestForm.php" mehtod="get">
 
 <input type="text" /> * Имя
 <p><input type="text" /> * e-mail</p>
@@ -128,10 +129,8 @@
 <p><h4>Выпадающий и мульти список:</h4></p>
 <fieldset>
 <legend> Города РБ</legend>     
-<form action="http:// " method="get">
-
-
-    </label>
+<form action="http://fe.it-academy.by/TestForm.php" mehtod="get">
+ 
     <select name="list" id="list">
         <option value="0"><b>Брест</b></option>
         <option value="1">Минск</option>
@@ -141,12 +140,12 @@
     </select>
 
     <select name="list" size="8" multiple id="list">
-        <optgroup lebel="Города РБ">
+        <optgroup label="Города РБ">
             <option value="1">Брест</option>
             <option value="2" disabled>Минск</option>
             <option value="3" selected> Витебск</option>
         </optgroup>
-        <optgroup lebel="Города России">
+        <optgroup label="Города России">
             <option value="4">Москва</option>
             <option value="5">Рязань</option>
             <option value="6">Магадан</option>
@@ -158,7 +157,7 @@
 </form>
 </fieldset>
 </td>
-</table>
+
 <!--7-->
 
 <table>
@@ -167,19 +166,19 @@
 <p><h4>Загрузка файла на сервер:</h4></p>
 <fieldset>
 <legend> Upload</legend>     
-<form action="http:// " method="get">
+<form action="http://fe.it-academy.by/TestForm.php" method="get">
 
-    <p>Файл</p>
+    <br>Файл</br>
     <p><button type-"sumbit"><b>Choose File</b></button> No file chosen </p> 
     <p>Срок хранения (года):</p>
 
     <input type="text" />
 <button type-"sumbit"><b>загрузить</b></button>
 
-<p><i>Метод POST</i></p>
-<p><i>В теге from используйте атрибут</i></p>
-<p><i>enctype="multipart/from-data" для отправки</i></p>
-<p><i>файла на сервер</i></p>
+<br><i>Метод POST</i></br>
+<br><i>В теге from используйте атрибут</i></br>
+<br><i>enctype="multipart/from-data" для отправки</i></br>
+<br><i>файла на сервер</i></br>
 </form>
 </fieldset>
 </td>
@@ -191,7 +190,7 @@
 <legend>Строка списка</legend>
     <input type="text" placeholder="Только русские буквы"></br>     
         <i>Телефонный номер в формате</i>
-            <p></p><i>+ХХХ-ХХ-ХХХХХХХХ, где Х- любое число</i></p>
+            <br><i>+ХХХ-ХХ-ХХХХХХХХ, где Х- любое число</i></br>
          <input type="text" placeholder="+375-29-1234567"></br>
         <button type-"sumbit"><b>Проверить</b></button>   
     </form>
